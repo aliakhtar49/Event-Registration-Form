@@ -6118,13 +6118,13 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 60px;
+  padding: 32px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 200;
-  line-height: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+  line-height: 56px;
+  color: GrayText;
+  background-color: #5A5555;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -6135,7 +6135,7 @@ a.badge:focus {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
-  color: inherit;
+  color: white;
 }
 
 .hero-unit li {

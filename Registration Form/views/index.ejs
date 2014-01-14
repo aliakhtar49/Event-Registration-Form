@@ -7,11 +7,35 @@
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
   </head>
   <body>
-    <h1></h1>
-    <p><button class="btn btn-primary" id="ali">It is working</button></p>
+  <a href="/login">Show</a>
+   <div  class="hero-unit" style="width: 25%" style="text-align: center">
+       Sign Up <br>
+       <div class="page-header">
+           <div style="text-align: center">
 
+             <input id='first_name' placeholder="First Name" type="text"/><br>
+             <input id='last_name' placeholder="Last Name " type="text"/><br>
+             <input id='password' placeholder="Password " type="password"/><br>
+             <input id='confirm_password' placeholder="Confirm Password " type="password"/><br>
+             <input id='email' type="text" placeholder="Email"/>
+          </div>
+       </div>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id='sign_up' class="btn btn-primary" >Sign Up</button>
+   </div>
      <script src="/javascripts/jquery-2.0.3.js"></script>
       <script src="/javascripts/bootstrap.js"></script>
       <script src="/javascripts/Registration.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#login').on("click",function(){
+              alert("gg");
+              $.ajax({
+                  url:'/login',
+                  type:'get'
+
+              })
+          });
+      });
+  </script>
   </body>
 </html>
