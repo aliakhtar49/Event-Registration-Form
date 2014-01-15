@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+#forget_your_passwod_body
+{
+
+}
+#forget_your_passwod_div
+{
+    border: 1px solid #D8B8B8;
+    padding: 72px;
+    margin-bottom: 30px;
+    font-size: 27px;
+    font-weight: 200;
+    line-height: 56px;
+    height:123px;
+    background-color: #AFA3A3;
+
+}

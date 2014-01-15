@@ -5,11 +5,15 @@ $(document).ready(function(){
     var password = $('#password').val();
     var email =$('#email').val();
         var confirm_password = $('#confirm_password').val();
-
+      /*  $.ajax({
+            url:'/check',
+            type:'post',
+            data:{email:email}
+        })*/
         var regrex_of_name =  /^[A-Za-z]{1,15}$/;
         var regrex_of_password = /^([a-z0-9]){4,15}/;
         var regrex_of_email = /^[A-Za-z0-9\.\^\-\_]{1,}[@]{1}((yahoo.com)||(gmail.com)||(hotmail.com))$/;
-     if((first_name.match(regrex_of_name)) && (last_name.match(regrex_of_name)) && (password.match(regrex_of_password)) && (confirm_password==password) && (email.match(regrex_of_email)))
+      if((first_name.match(regrex_of_name)) && (last_name.match(regrex_of_name)) && (password.match(regrex_of_password)) && (confirm_password==password) && (email.match(regrex_of_email)))
      {
          alert("Proper name");
      }
