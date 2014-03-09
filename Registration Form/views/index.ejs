@@ -7,7 +7,10 @@
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
   </head>
   <body>
+<!--  <button id="login">Login</button>-->
+<h1>Bug Fixer (Write Bug Here)</h1>
   <a href="/login">Show</a>
+  <a href="/event">Event</a>
    <div  class="hero-unit" style="width: 25%" style="text-align: center">
        Sign Up <br>
        <div class="page-header">
@@ -26,16 +29,7 @@
       <script src="/javascripts/bootstrap.js"></script>
       <script src="/javascripts/Registration.js"></script>
   <script>
-      $(document).ready(function(){
-          $('#login').on("click",function(){
-              alert("gg");
-              $.ajax({
-                  url:'/login',
-                  type:'get'
 
-              })
-          });
-      });
   </script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+<body>
+<span><%= store_item.email %></span><br>
+<span><%= store_item.issue_name %></span><br>
+<input id='comment' type="text" placeholder="Enter Your Comment Over Herer"/><br/>
+<button id="cmt_btn">Comment</button>
+here man you can come above here to knowt heh jj
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var email = <%- JSON.stringify(store_item.email) %>;
+        var issue_name  = <%- JSON.stringify(store_item.issue_name) %>
+                $('#cmt_btn').on("click",function(){
+                    var comment_value = $('#comment').val();
+                    $.ajax({
+                        url:'/comment1',
+                        type:'post',
+                        data:{email_post:email,issue_name:issue_name,comment_value:comment_value}
+                    }).done(function(res){
+                               alert(res);
+                            });
+                });
+
+    });
+</script>
+</body>
+</html>

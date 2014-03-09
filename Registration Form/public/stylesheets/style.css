@@ -8,7 +8,7 @@ a {
 }
 #forget_your_passwod_body
 {
-
+background-color: #413838;
 }
 #forget_your_passwod_div
 {
@@ -19,6 +19,87 @@ a {
     font-weight: 200;
     line-height: 56px;
     height:123px;
-    background-color: #AFA3A3;
+    background-color: #F5EDED;
 
+}
+#login_page_body
+{
+
+}
+#login_page_div1
+{
+    border: 1px solid #D8B8B8;
+    padding: 72px;
+    margin-bottom: 63px;
+    font-size: 31px;
+    font-weight: 200;
+    line-height: 38px;
+    height:137px;
+    margin-left: 108px;
+    background-color: #F5EDED;
+}
+#login_page_div2
+{
+    border: 1px solid #D8B8B8;
+    padding: 72px;
+    margin-bottom: 63px;
+    font-size: 31px;
+    font-weight: 200;
+    line-height: 38px;
+    height:137px;
+    background-color: #F5EDED;
+}
+#event_div
+{
+    border: 1px solid green;
+    margin-left: 270px;
+    width: 730px;
+    height: 1000px;
+    margin-top: 100px;
+    color: #ffffff;
+}
+#event_div1
+{
+    margin-left: 50px;
+}
+#githubdiv
+{
+    border: 1px solid green;
+    width: 600px;
+    height: 1500px;
+    margin-left: 0px;
+    color: wheat;
+    font-family: cursive;
+}
+#githubdiv2
+{
+    border: 1px solid green;
+    width:312px;
+    height: 1500px;
+    color: wheat;
+    font-family: cursive;
+}
+#NewRepostry1
+{
+    border: 1px solid green;
+    width:312px;
+    height: 900px;
+    color: rgb(146, 138, 123);
+    font-family: cursive;
+    margin-left: 0px;
+    margin-top: 46px;
+    padding-top: 50px;
+}
+#NewRepostry
+{
+
+    border: 1px solid green;
+    width: 600px;
+    height: 900px;
+    margin-left: 114px;
+    color: rgb(146, 138, 123);
+    font-family: cursive;
+    margin-top: 46px;
+    padding-top: 50px;
+    line-height: 50px;
 }

@@ -3,29 +3,55 @@
 <head>
     <title></title>
 
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
     <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+
 </head>
-<body >
-<div class="container">
-<div  class="hero-unit" style="width: 25%" style="text-align: center">
-    Login <br>
-    <div class="page-header">
-        <div style="text-align: center">
+<body id='forget_your_passwod_body' id='login_page_body'>
+<ul class="nav nav-pills">
+    <li><a href="\">Home</a></li>
+    <li><a href="\">SignUp</a></li>
+    <li><a href="\login">Login</a></li>
+</ul>
+<div>
+    <div   style="width: 25%" >
+        Login <br/>
+        <div class="container" class="span12">
+            <div id="login_page_div1" class="span3" >
+                 <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="/forget_your_password" >Forgot Your Password</a></h4>
+                <input id='email_in_login' type="text" placeholder="Email"/>
+                <input id='password_in_login' placeholder="Password " type="password"/>
+                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id='login_btn' class="btn btn-primary" style="display: block;  margin: -8px -18px 14px; width: 100px; height: 32px; padding: 0px; float: right;" >Login</button>
 
-           <input type="text" placeholder="Email"/>
-            <input placeholder="Password " type="text"/><br>
-            <a href="/forget_your_password" >Forgot Your Password</a>
-
-
-
+            </div>
+            <div  id="login_page_div2" class="span3">
+            <h3>Don't You Have Account </h3>
+                 <a href="\">SignUp</a>
+            </div>
         </div>
     </div>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-primary" >Login</button>
-</div>
 </div>
 <script src="/javascripts/jquery-2.0.3.js"></script>
 <script src="/javascripts/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+$('#login_btn').on("click",function(){
+var email_in_login = $('#email_in_login').val();
+var password_in_login = $('#password_in_login').val();
+      $.ajax({
+              url:'/See_Exist_User_When_Login',
+              type:'POST',
+              data:{email_in_login:email_in_login,password_in_login:password_in_login},
+              success:function(res)
+              {
+
+              $('body').html(res);}
+})
+
+});
+});
+</script>
 
 </body>
 </html>

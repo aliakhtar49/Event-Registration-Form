@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+
+<body>
+<div  id="forget_your_passwod_body">
+<ul class="nav nav-pills">
+    <li><a href="/">Home</a></li>
+    <li><a href="/">SignUp</a></li>
+    <li><a href="/login">Login</a></li>
+</ul>
+<div >
+    ali
+    <div class="span2" id="githubdiv2">
+
+        <h1>FirstName:<br><span style="color: #ffffff"><%= doc.first_name_in_database %></span></h1>
+        <h1>LastName:<br><span style="color: #ffffff"><%= doc.last_name_in_database %></span></h1>
+        <h2>Email:<br><span style="color: #ffffff"><%= doc.email_in_database %></span></h2>
+
+
+    </div>
+    <div class="span6" id="githubdiv"><ul class="nav nav-pills">
+            <li><a href="#">Popular Repostry </a></li>
+            <li><a href="#">Contributions</a></li>
+            <li><button class="btn btn-primary" id="create_new_repositry"> <!--href="/Create_new_Repositry"-->Create New Repostry </button></li>
+        </ul></div>
+</div>
+</div>
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/Registration.js"></script>
+<script>
+$(document).ready(function(){
+    $('#create_new_repositry').on("click",function(){
+        var first_name = <%- JSON.stringify(doc.first_name_in_database) %>;
+        var email  = <%- JSON.stringify(doc.email_in_database) %>
+        $.ajax({
+            url:'/Create_new_Repositry',
+            type:'post',
+            data:{first_name:first_name,email:email},
+            success:function(res){
+                $('body').html(res);
+            }
+        })
+     //   $('body').empty();
+     //   $('body').append("<div style='color: rgb(146, 138, 123);' id='forget_your_passwod_body'> <ul class='nav nav-pills'> <li><a href='/'>LogOut</a></li> <li><a href='#'>Repoistry</a></li><li><a href='#'>Ali Akhtar</a></li></ul><h1 style='border-bottom: 1px solid #808080;padding-bottom: 50px;'>Here Your Issue Name Here Name as Repoistry Name</h1><form method='post' enctype='multipart/form-data' name='feedback' action='/issue1'  onSubmit='return checkform()'><div class='span2' id='NewRepostry'> <z style='margin-left: 25px;margin-bottom: 2px;padding-bottom: 2px;'>Great repository names are short and memorable. Need inspiration?</z><div style='margin-top: 50px;'> <d style='margin-left: 50px;font-size: 30px;'>Issue Name</d><input name='issue_name' style='margin-left: 50px;width:500px;height: 30px' style='width: 500px;' type='text' placeholder='Enter Issue Name'><br> <d style='margin-left: 50px;font-size: 30px;'>Description(optional)</d><input  style='margin-left: 50px;width:500px;height: 30px' style='width: 500px;' type='text' placeholder='Enter Description'><br> <f style='margin-left: 50px;font-size: 30px;'>  Website Name(optional)</f><br><input style='margin-left: 50px;height: 30px;width:500px' style='width: 500px;' type='text' placeholder='Enter Website'> <div  style='margin-top: 35px;line-height: 20px'> <z style='margin-left: 25px;line-height: 0px;'>Upload  Issues In  A  FileWith The Extension .txt or .cpp</z> </div><br><input  class='btn-large' type='file' id='file' name='thumbnail'><br/> <input  class='btn btn-danger'  style=' margin-top:50px; width: 200px; height: 38px;margin-left: 150px; padding: 0px;'    type='submit'> </div></div>  </form> <div> <div class='span6' id='NewRepostry1'><ul class='nav nav-pills'> <li><a href='#'>Popular Repostry </a></li> <li><a href='#'>Contributions</a></li>   <li><a href='#'>Create New Repostry </a></li>  </ul>  </div>  </div> </div> ");
+
+        //        $.ajax({
+           //         url:'/issue',
+          //          data:formdata
+          //      })
+
+
+    });
+});
+</script>
+</body>
+</html>

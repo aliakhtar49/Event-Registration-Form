@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='../public/stylesheets/style.css' />
+    <link rel="stylesheet"href="../public/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="../public/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+<body style="color: rgb(146, 138, 123);" id="forget_your_passwod_body">
+<ul class="nav nav-pills">
+    <li><a href="#">LogOut</a></li>
+    <li><a href="#">Repoistry</a></li>
+    <li><a href="Github.html">Ali Akhtar</a></li>
+</ul>
+
+
+<h1 style="border-bottom: 1px solid #808080;padding-bottom: 50px;">Here Your Issue Name Here Name as Repoistry Name</h1>
+
+
+
+
+
+<div>
+<div class="span2" id="NewRepostry">
+    <z style="margin-left: 25px;margin-bottom: 2px;padding-bottom: 2px;">Great repository names are short and memorable. Need inspiration?</z>
+    <div style="margin-top: 50px;">
+        <d style="margin-left: 50px;font-size: 30px;">Issue Name</d><input id="issue_name" style="margin-left: 50px;width:500px;height: 30px" style="width: 500px;" type="text" placeholder="Enter Issue Name"><br>
+        <d style="margin-left: 50px;font-size: 30px;">Description(optional)</d><input style="margin-left: 50px;width:500px;height: 30px" style="width: 500px;" type="text" placeholder="Enter Description"><br>
+        <f style="margin-left: 50px;font-size: 30px;">  Website Name(optional)</f><br><input style="margin-left: 50px;height: 30px;width:500px" style="width: 500px;" type="text" placeholder="Enter Website">
+        <div  style="margin-top: 35px;line-height: 20px">
+           <z style="margin-left: 25px;line-height: 0px;">Upload  Issues In  A  File
+           With The Extension .txt or .cpp</z>
+        </div><br>
+
+
+    </div>
+    <form  class="modal-form" method="post" enctype="multipart/form-data" action="/file-upload">
+        <input  class="btn-large" type="file" id='file' name="thumbnail"><br/>
+        <input  class="btn btn-danger"  style=" margin-top:50px; width: 200px; height: 38px;margin-left: 150px; padding: 0px;"   id="sub" disabled="" type="submit">
+
+    </form>
+</div>
+
+<div class="span6" id="NewRepostry1"><ul class="nav nav-pills">
+    <li><a href="#">Popular Repostry </a></li>
+    <li><a href="#">Contributions</a></li>
+    <li><a href="#">Create New Repostry </a></li>
+</ul>
+</div>
+
+
+</div>
+<script src="../public/javascripts/jquery-2.0.3.js"></script>
+<script src="../public/javascripts/bootstrap.js"></script>
+<script>
+    $(document).ready(
+            function(){
+
+                $('input:file').change(
+                        function(){
+
+                                $('input:submit').attr('disabled',false);
+
+
+
+                        }
+                );
+            });
+</script>
+</body>
+</html>
