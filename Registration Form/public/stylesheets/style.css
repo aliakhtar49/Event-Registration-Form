@@ -103,3 +103,59 @@ background-color: #413838;
     padding-top: 50px;
     line-height: 50px;
 }
+#commentbox
+{
+    border: 2px solid green;
+    height: 984px;
+    margin-right: 93px;
+    margin-left: 99px;
+    margin-top: 45px;
+    color: #ffffff;
+}
+#innercomment1
+{border: 2px solid green;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 380px;
+}
+#innercomment2
+{border: 2px solid green;
+    margin-top: 188px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 118px;}
+#comment{
+    width: 500px;
+    height: 30px;
+    margin-left: 112px;
+}
+#cmt_btn
+{
+    margin-left: 112px;
+    color: rgb(221, 221, 233);
+    background-color: rgb(71, 71, 73);
+    height: 38px;
+    padding-top: 5px;
+    width: 300px;
+    clear: both;
+}
+#post{
+margin-left: 112px;
+   font-family: cursive;
+
+}
+#cmt_post
+{
+    margin-right: 25px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    line-height: 78px;
+
+    font-family: cursive;
+    font-size: 25px;
+
+
+    border-bottom: 1px solid green;
+    padding: 5px;
+}

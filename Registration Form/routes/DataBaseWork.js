@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var nodemailer = require("nodemailer");
 var connection = mongoose.connect("mongodb://localhost/SEProjectDataBase", function(err){
     if(err){
         console.log("Err");
@@ -109,9 +110,11 @@ exports.See_Exist_User_When_Login = function(req,res)
         {
          if(req.body.password_in_login == doc.password_in_database)
          {
+             console.log("herer");
+
              if(req.url == '/See_Exist_User_When_Login')
              {
-
+                 console.log("herer1");
                  res.render('AddEvent',{doc: doc});}
          }
             else
@@ -130,7 +133,7 @@ exports.Issue_Info=function(req,res)
     var fs = require('fs');
     var path1 = req.files.thumbnail.path;
     console.log(path1);
-    var a =  fs.readFileSync(path1,'utf8');
+    var a =  fs.readFileSync(path1,'binary');
   //  console.log(a);
     console.log(p.x);   //email global
    // res.send("Works");
@@ -176,10 +179,10 @@ exports.Issue_Info=function(req,res)
                             res.render('ShowUserPostOverHere',{store_item: store_item});
                         } });*/
                     Schema_of_Issues.findOne({Issue_Names:{$elemMatch: {text:req.body.issue_name}}}, function (err,docs) { console.log(docs);
-                       // res.send("Worksd");
-                       // res.render('ShowUserPostOverHere');
 
-                        var store_item =  {email:p.x,issue_name:req.body.issue_name};
+
+
+                        var store_item =  {email:p.x,issue_name:req.body.issue_name,docs:docs};
                         res.render('ShowUserPostOverHere',{store_item: store_item});
                     });
 
@@ -204,7 +207,150 @@ exports.Comment_Info = function(req,res)
         }
         else
         {
-            res.send("Comment Are Added");
+            Comment.findOne({ IssueName:  req.body.issue_name }, function (err, doc){
+                if(doc== " ")
+                {
+                    res.send("Data Not Found Here");
+                }
+                else
+                {
+                    console.log(doc);
+                    res.send(doc);
+
+                }
+            });
+            /*Comment.findOne({Comment:{$elemMatch: {text:'this'}}}, function (err,docs) { console.log(docs);
+                res.send(docs);
+            });
+            res.send("Comment Are Added");*/
+
         }
     });
 }
+
+exports.ShowAllRepositry = function(req,res)
+{
+
+        Schema_of_Issues.findOne({ email_in_Issue:  p.x }, function (err, doc){
+            if(doc== " ")
+            {
+                res.send("Data Not Found Here");
+            }
+            else
+            {
+                res.send(doc);
+            }
+        });
+
+}
+exports.UsersAllData =  function(req,res)
+{
+   /* Comment.findOne({ IssueName:  req.body.issue_name }, function (err, doc){
+        if(doc== " ")
+        {
+            res.send("Data Not Found Here");
+        }
+        else
+        {*/
+
+            Schema_of_Issues.findOne({ email_in_Issue:  p.x }, function (err, docs){
+                if(docs== " ")
+                {
+                    res.send("Data Not Found Here");
+                }
+                else
+                {
+                   // console.log(docs + doc);
+
+                    //res.send(docs + doc)
+                    res.send(docs);
+                }
+            });
+/*
+
+        }
+    });
+*/
+
+}
+exports.AlreadyHaveComments = function(req,res)
+{
+    Comment.findOne({ IssueName:  req.body.issue_name }, function (err, doc){
+        if(doc== " ")
+        {
+            res.send("Data Not Found Here");
+        }
+        else
+        {
+            res.send(doc);
+
+
+        }
+    });
+}
+exports.onlysavethecoomment = function(req,res)
+{
+    Comment.update({"IssueName" : req.body.issue_name}, {$push : {"Comment":{"text":req.body.comment_value}}},function(err)
+    {
+        if(err)
+        {
+            res.send("Error in Saving");
+        }
+        else
+        {
+            res.send("Your COmment Are Saved To Our data base");
+        }
+    });
+}
+exports.FirstfindPassword = function(req,res)
+{
+    Schema_of_SignUp.find({email_in_database:req.body.email}, function(err, docs){
+
+        if(err){
+            console.log('error');
+
+        } else {
+            console.log(docs);
+            res.send(docs);
+        }
+    });
+}
+exports.sendemailifuserfor = function(req,res)
+{
+    var smtpTransport = nodemailer.createTransport("SMTP",{
+        service: "Gmail",
+        auth: {
+            user: "smartali.7778@gmail.com",
+            pass: "alimeldon"
+        }
+    });
+    smtpTransport.sendMail({
+        from: "Issue Tracking Website  <smartali.7778@gmail.com>", // sender address
+        to:  req.body.email, // comma separated list of receivers
+        subject: "Password", // Subject line
+        text: "Your Password  \n" + req.body.password + "\n" // plaintext body
+    }, function(error){
+        if(error){
+            console.log(error);
+            res.send("error");
+        }else{
+            console.log("Message sent: " + res.message);
+            res.send("Sent");
+        }
+    });
+
+}
+/*
+exports.AllDeveloper = function(req,res)
+{
+    Schema_of_SignUp.find({}, function(err, docs){
+
+        if(err){
+            console.log('error');
+
+        } else {
+            console.log(docs);
+        }
+    });
+
+}*/

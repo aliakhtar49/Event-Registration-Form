@@ -47,10 +47,17 @@ app.post('/Create_new_Repositry',function(req,res){
 //app.get('/AddEvent',function(req,res){res.render('AddEvent')});
 app.post('/issue1',dataBase.Issue_Info);
 app.post('/comment1',dataBase.Comment_Info);
+app.post('/ShowAllRepositry',dataBase.ShowAllRepositry);
+app.post('/UsersAllData',dataBase.UsersAllData);
+app.post('/AlreadyHaveComments',dataBase.AlreadyHaveComments);
+app.post('/onlysavethecoomment',dataBase.onlysavethecoomment)
+app.post('/sendemailifuserfor',dataBase.sendemailifuserfor);
 
-/*app.get('/forget_your_password',function(req,res){
+app.get('/forget_your_password',function(req,res){
     res.render('forget_your_password');
-});*/
+});
+app.post('/FirstfindPassword',dataBase.FirstfindPassword);
+//app.post('/AllDeveloper',dataBase.AllDeveloper);
 /*app.get('/event',function(req,res){
     res.render('AddEvent');
 });*/
