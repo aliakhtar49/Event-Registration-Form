@@ -26,7 +26,7 @@
       <file leaf-file-name="AddEvent.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/AddEvent.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="-5.8076925" vertical-offset="2161" max-vertical-offset="2805">
+            <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="2161" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
@@ -71,27 +71,27 @@
       <file leaf-file-name="NewRepoistry.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/NewRepoistry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="58" selection-start="2297" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1292">
+            <state line="53" column="58" selection-start="2297" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBaseWork.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataBaseWork.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.6424242" vertical-offset="2933" max-vertical-offset="6154">
+            <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.0" vertical-offset="2763" max-vertical-offset="6154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowUserPostOverHere.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ShowUserPostOverHere.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/ShowUserPostOverHere.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="75" selection-start="2366" selection-end="2374" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="1615">
+            <state line="40" column="20" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.5197368" vertical-offset="522" max-vertical-offset="2176">
               <folding>
-                <marker date="1395437462917" expanded="true" signature="2430:2449" placeholder="..." />
+                <marker date="1396637945649" expanded="false" signature="3608:3627" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file leaf-file-name="practice.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/practice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="578">
+            <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -109,7 +109,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="16" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="1850" max-vertical-offset="2822">
+            <state line="140" column="16" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2822">
               <folding />
             </state>
           </provider>
@@ -150,11 +150,11 @@
         <option value="$PROJECT_DIR$/views/AddEvent.ejs" />
         <option value="$PROJECT_DIR$/views/forget_your_password.ejs" />
         <option value="$PROJECT_DIR$/views/practice.html" />
-        <option value="$PROJECT_DIR$/views/ShowUserPostOverHere.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/DataBaseWork.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/views/ShowUserPostOverHere.ejs" />
       </list>
     </option>
   </component>
@@ -374,15 +374,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32646048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3321918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3321918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -621,15 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/ShowUserPostOverHere.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="75" selection-start="2366" selection-end="2374" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="1615">
-          <folding>
-            <marker date="1395437462917" expanded="true" signature="2430:2449" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/practice.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="578">
@@ -660,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/AddEvent.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="-5.8076925" vertical-offset="2161" max-vertical-offset="2805">
+        <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="2161" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>
@@ -674,8 +665,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.6424242" vertical-offset="2933" max-vertical-offset="6154">
+        <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.0" vertical-offset="2763" max-vertical-offset="6154">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ShowUserPostOverHere.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="20" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.5197368" vertical-offset="522" max-vertical-offset="2176">
+          <folding>
+            <marker date="1396637945649" expanded="false" signature="3608:3627" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

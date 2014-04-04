@@ -33,6 +33,12 @@
         var email = <%- JSON.stringify(store_item.email) %>;
         var issue_name  = <%- JSON.stringify(store_item.issue_name) %>
         var resData  = <%- JSON.stringify(store_item.docs) %>
+        var a = 147;
+        var str = new Array();
+        var ptr = new Array();
+        var count = 0;
+        var one = 0;
+        var two = 0;
 
         for(var i =0; i<resData.Issue_Names.length;i++)
         {
@@ -41,11 +47,38 @@
            // alert(resData.Issue_Names[i].text==issue_name);
             if(resData.Issue_Names[i].text==issue_name)
             {
-                $('#post').append(resData.Issue_Names[i].content);
-               // alert(resData.Issue_Names[i].content);
-               // $('#post').css({ "background-color": "#ffe", "fontSize": "30px"})
+                var doc = resData.Issue_Names[i].content;
+                for(var i =0;i<doc.length;i++)
+                {
+                    if(doc.charAt(i)==';')
+                    {
+                        a=147;
+                    }
+                    if(doc.charCodeAt(i)==a)
+                    {
+                        doc = doc.replace(doc.charAt(i),'\"');
+                        a++;
+                    }
+                }
+                for(var i=0;i<doc.length;i++)
+                {
 
-                // alert(resData.Issue_Names[i].content);
+                    if(doc[i]==';')
+                    {
+                        two=i;
+                        /*str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+"</div>;<button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";*/
+                        str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+";</div><button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";
+                        ptr[count]=doc.slice(one,two) + ';';
+                        one=two +1 ;
+                        count++;
+                    }
+                }
+                for(var i=0;i<str.length;i++ )
+                {
+                    $('#post').append(str[i]);
+                }
+              /*  $('#post').append(resData.Issue_Names[i].content);*/
+
             }
 
         }
