@@ -28,8 +28,10 @@ var Schema3 = new Schema({
     Email_Comment:String,
     IssueName:String,
 
+    linestyling:String,
     Comment :
     {text:String}
+
 })
 var Schema_of_SignUp = mongoose.model("Schema_of_SignUp",Schema1);
 var Schema_of_Issues = mongoose.model("Schema_of_Issues",Schema2);
@@ -134,11 +136,8 @@ exports.Issue_Info=function(req,res)
     var path1 = req.files.thumbnail.path;
     console.log(path1);
     var a =  fs.readFileSync(path1,'binary');
-  //  console.log(a);
-    console.log(p.x);   //email global
-   // res.send("Works");
-//console.log(req.body.issue_name);
-    var data_of_user_of_Post = new Comment({IssueName:req.body.issue_name});
+    console.log(p.x);   //email globa;
+    var data_of_user_of_Post = new Comment({IssueName:req.body.issue_name,linestyling:"ali"});
     data_of_user_of_Post.save(function(err){
         if(err)
         {
@@ -354,3 +353,19 @@ exports.AllDeveloper = function(req,res)
     });
 
 }*/
+exports.SaveHiglitevalueHere = function(req,res)
+{
+    Comment.findOne({ IssueName: "mm" }, function (err, doc){
+        console.log(doc);
+        console.log(req.body.red);
+        doc.linestyling = req.body.red;
+        doc.save();
+
+       // doc.update({IssueName:"fff"},{linestyling:"kkk"});
+        //   doc.save();
+
+        console.log(doc);
+        res.send("data updated");
+    });
+
+}

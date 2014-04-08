@@ -159,3 +159,11 @@ margin-left: 112px;
     border-bottom: 1px solid green;
     padding: 5px;
 }
+.redline
+{
+    background-color: red;
+}
+#post
+{
+    border:2px solid green;
+}

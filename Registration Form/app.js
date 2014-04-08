@@ -52,6 +52,7 @@ app.post('/UsersAllData',dataBase.UsersAllData);
 app.post('/AlreadyHaveComments',dataBase.AlreadyHaveComments);
 app.post('/onlysavethecoomment',dataBase.onlysavethecoomment)
 app.post('/sendemailifuserfor',dataBase.sendemailifuserfor);
+app.post('/SaveHiglitevalueHere',dataBase.SaveHiglitevalueHere);
 
 app.get('/forget_your_password',function(req,res){
     res.render('forget_your_password');

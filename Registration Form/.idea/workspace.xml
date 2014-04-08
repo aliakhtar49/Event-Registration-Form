@@ -23,94 +23,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddEvent.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/AddEvent.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="2161" max-vertical-offset="2805">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forget_your_password.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/forget_your_password.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="289" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="34" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/login.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="15" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1088">
+            <state line="49" column="15" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1088">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repositry.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Repositry.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="22" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewRepoistry.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/NewRepoistry.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="58" selection-start="2297" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1292">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataBaseWork.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DataBaseWork.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.0" vertical-offset="2763" max-vertical-offset="6154">
+            <state line="361" column="12" selection-start="9858" selection-end="9858" vertical-scroll-proportion="0.2755682" vertical-offset="6040" max-vertical-offset="6409">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowUserPostOverHere.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="query.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1782" column="29" selection-start="46625" selection-end="46625" vertical-scroll-proportion="0.0" vertical-offset="30143" max-vertical-offset="44472">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promise.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/lib/promise.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="161" column="7" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.0" vertical-offset="2620" max-vertical-offset="4658">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="413" column="15" selection-start="8649" selection-end="8649" vertical-scroll-proportion="0.0" vertical-offset="6870" max-vertical-offset="11475">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/collection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="992" column="4" selection-start="41166" selection-end="41166" vertical-scroll-proportion="0.0" vertical-offset="16747" max-vertical-offset="30362">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cursor.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/cursor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="898" column="4" selection-start="33540" selection-end="33540" vertical-scroll-proportion="0.0" vertical-offset="15149" max-vertical-offset="16218">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="635" column="73" selection-start="26945" selection-end="26945" vertical-scroll-proportion="0.0" vertical-offset="10763" max-vertical-offset="17272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="9" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="5389">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowUserPostOverHere.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/ShowUserPostOverHere.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="20" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.5197368" vertical-offset="522" max-vertical-offset="2176">
+            <state line="110" column="53" selection-start="4318" selection-end="4318" vertical-scroll-proportion="-58.846153" vertical-offset="340" max-vertical-offset="2788">
               <folding>
-                <marker date="1396637945649" expanded="false" signature="3608:3627" placeholder="..." />
+                <marker date="1396687368975" expanded="false" signature="5146:5165" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="practice.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/practice.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="16" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2822">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,19 +150,19 @@
         <option value="$PROJECT_DIR$/views/AddEvent.ejs" />
         <option value="$PROJECT_DIR$/views/forget_your_password.ejs" />
         <option value="$PROJECT_DIR$/views/practice.html" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/DataBaseWork.js" />
-        <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/views/ShowUserPostOverHere.ejs" />
+        <option value="$PROJECT_DIR$/routes/DataBaseWork.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
+    <option name="x" value="7" />
     <option name="y" value="2" />
-    <option name="width" value="1361" />
-    <option name="height" value="716" />
+    <option name="width" value="1359" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,56 +237,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show_data_mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registration Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show_data_mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registration Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show_data_mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registration Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -313,14 +263,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -331,8 +273,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -340,6 +286,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -363,26 +313,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="2" width="1361" height="716" extended-state="0" />
+    <frame x="7" y="2" width="1359" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14126395" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1414743" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32646048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3321918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33162394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -402,11 +352,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6124" column="19" selection-start="126854" selection-end="126854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="104941" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/Registration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="6" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="306" />
@@ -507,26 +452,6 @@
         <state line="127" column="12" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0" vertical-offset="2016" max-vertical-offset="38386" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="992" column="4" selection-start="41166" selection-end="41166" vertical-scroll-proportion="0.0" vertical-offset="16754" max-vertical-offset="30362" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1782" column="29" selection-start="46625" selection-end="46625" vertical-scroll-proportion="0.0" vertical-offset="30150" max-vertical-offset="44472" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/lib/promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="19" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0" vertical-offset="1437" max-vertical-offset="4658" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/cursor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="898" column="4" selection-start="33540" selection-end="33540" vertical-scroll-proportion="0.0" vertical-offset="15156" max-vertical-offset="16218" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/Github.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="6" selection-start="280" selection-end="983" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="629" />
@@ -535,16 +460,6 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Issue.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="13" selection-start="2519" selection-end="2519" vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="1853" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="36" selection-start="3604" selection-end="3604" vertical-scroll-proportion="0.0" vertical-offset="2657" max-vertical-offset="5389" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js">
@@ -582,11 +497,6 @@
         <state line="797" column="6" selection-start="18564" selection-end="18564" vertical-scroll-proportion="0.0" vertical-offset="13342" max-vertical-offset="13685" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="0" selection-start="8826" selection-end="8826" vertical-scroll-proportion="0.0" vertical-offset="6962" max-vertical-offset="11475" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="8" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1071" />
@@ -609,29 +519,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/forget_your_password.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="289" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1190">
-          <folding />
-        </state>
+        <state line="13" column="5" selection-start="289" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/NewRepoistry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="58" selection-start="2297" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1292">
-          <folding />
-        </state>
+        <state line="53" column="58" selection-start="2297" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/practice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="8" column="34" selection-start="290" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="578" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+    <entry file="file://$PROJECT_DIR$/views/Issue.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="16" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="1850" max-vertical-offset="2822">
-          <folding />
+        <state line="65" column="13" selection-start="2519" selection-end="2519" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1853">
+          <folding>
+            <marker date="1391226350005" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,40 +548,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.ejs">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="15" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1088">
+        <state line="160" column="1" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0" vertical-offset="2547" max-vertical-offset="2958">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/AddEvent.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="75" selection-start="6278" selection-end="6345" vertical-scroll-proportion="0.0" vertical-offset="2161" max-vertical-offset="2805">
+        <state line="139" column="40" selection-start="6469" selection-end="6469" vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="2805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="15" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="9" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="5389">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="635" column="73" selection-start="26945" selection-end="26945" vertical-scroll-proportion="0.0" vertical-offset="10763" max-vertical-offset="17272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="34" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="84" selection-start="5713" selection-end="5774" vertical-scroll-proportion="0.0" vertical-offset="2763" max-vertical-offset="6154">
+        <state line="54" column="51" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ShowUserPostOverHere.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.5197368" vertical-offset="522" max-vertical-offset="2176">
+        <state line="110" column="53" selection-start="4318" selection-end="4318" vertical-scroll-proportion="-58.846153" vertical-offset="340" max-vertical-offset="2788">
           <folding>
-            <marker date="1396637945649" expanded="false" signature="3608:3627" placeholder="..." />
+            <marker date="1396687368975" expanded="false" signature="5146:5165" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1782" column="29" selection-start="46625" selection-end="46625" vertical-scroll-proportion="0.0" vertical-offset="30143" max-vertical-offset="44472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="413" column="15" selection-start="8649" selection-end="8649" vertical-scroll-proportion="0.0" vertical-offset="6870" max-vertical-offset="11475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="992" column="4" selection-start="41166" selection-end="41166" vertical-scroll-proportion="0.0" vertical-offset="16747" max-vertical-offset="30362">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/cursor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="898" column="4" selection-start="33540" selection-end="33540" vertical-scroll-proportion="0.0" vertical-offset="15149" max-vertical-offset="16218">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/lib/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="7" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.0" vertical-offset="2620" max-vertical-offset="4658">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="361" column="12" selection-start="9858" selection-end="9858" vertical-scroll-proportion="0.2755682" vertical-offset="6040" max-vertical-offset="6409">
+          <folding />
         </state>
       </provider>
     </entry>

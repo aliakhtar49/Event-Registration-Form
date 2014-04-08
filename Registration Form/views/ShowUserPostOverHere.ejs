@@ -16,7 +16,7 @@
     <h1><b>Email </b>:  <%= store_item.email %></h1>
     <h2>Issue Name :<%= store_item.issue_name %></h2>
     <div  class="sp" id="innercomment1">
-        <div id="post"></div><br/><br><br>
+        <div id="post"><br><br><div id="css_btn_save"></div></div><br/><br><br>
         <input  id='comment' type="text" placeholder="Enter Your Comment Over Herer"/><br/>
         <button class="btn-large" id="cmt_btn">Comment</button>
 
@@ -29,7 +29,7 @@
 <script>
     $(document).ready(function(){
 
-
+        var red = "0";
         var email = <%- JSON.stringify(store_item.email) %>;
         var issue_name  = <%- JSON.stringify(store_item.issue_name) %>
         var resData  = <%- JSON.stringify(store_item.docs) %>
@@ -77,9 +77,45 @@
                 {
                     $('#post').append(str[i]);
                 }
-              /*  $('#post').append(resData.Issue_Names[i].content);*/
+                $('#css_btn_save').append("<br><button class='btn btn-primary' id='btn_save_id'>Saved</button><button class='btn btn-primary' id='btn_edit_id'>Edit</button>");
+
 
             }
+            $('.ali').on("click",function(){
+
+                var a = $(this).attr("id");      //get the id of current click button that i generated dynamically
+              //  alert(a);                        //alert it
+                var b = a.charAt(1);             //get the value of count its positiona is at 1
+              //  alert(ptr[b]);
+                var id_string = "a1"+ a.charAt(1);
+               // alert(id_string);
+                if($('#a1'+ a.charAt(1)+'').hasClass('redline')) {
+                    $('#a1'+ a.charAt(1)+'').removeClass('redline');
+                     red = red.substr(0, red.length-1);
+                    alert(red);
+                }
+                else {
+                    $('#a1'+ a.charAt(1)+'').addClass('redline');
+                    red = red + b;
+                    alert(red);
+
+                }
+
+            });
+            $('#btn_save_id').on("click",function(){
+                $('.ali').attr("disabled", true);
+                $.ajax({
+             url:'/SaveHiglitevalueHere',
+                    type:'POST',
+                    data:{red:red,issue_name:issue_name},
+                    success:function(res){alert(res);}
+                })
+                alert(red);
+            });
+
+            $('#btn_edit_id').on("click",function(){
+                $('.ali').attr("disabled", false);
+            });
 
         }
 
