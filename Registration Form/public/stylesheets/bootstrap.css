@@ -4051,6 +4051,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-tabs > li > a,
 .nav-pills > li > a {
+
   padding-right: 12px;
   padding-left: 12px;
   margin-right: 2px;
@@ -6123,11 +6124,13 @@ a.badge:focus {
   font-size: 27px;
   font-weight: 200;
   line-height: 56px;
-  color: GrayText;
+  color: black;
   background-color: #5A5555;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+    margin-left: 376px;
+    background-color: transparent;
 }
 
 .hero-unit h1 {

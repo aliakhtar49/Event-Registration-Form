@@ -6,17 +6,21 @@
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
     <title></title>
 </head>
-<body id="forget_your_passwod_body">
-<ul class="nav nav-pills">
-    <li><a href="\">Home</a></li>
-    <li><a href="\">SignUp</a></li>
-    <li><a href="\login">Login</a></li>
-</ul>
+<body style="background: url('/img/SignUpBackGround.jpg')" id="forget_your_passwod_body">
+
+    <ul  class="nav nav-pills">
+        <li><a href="\">Home</a></li>
+        <li><a href="\">SignUp</a></li>
+        <li><a href="\login">Login</a></li>
+    </ul>
+
+
 <div id="commentbox">
-    <h1><b>Email </b>:  <%= store_item.email %></h1>
-    <h2>Issue Name :<%= store_item.issue_name %></h2>
+  <span class="post_user_info"> Email :  <%= store_item.email %></span><br>
+   <span class="post_user_info">Issue Name :<%= store_item.issue_name %></span>
     <div  class="sp" id="innercomment1">
         <div id="post"><br><br><div id="css_btn_save"></div></div><br/><br><br>
+        <div id="save_edit"></div>
         <input  id='comment' type="text" placeholder="Enter Your Comment Over Herer"/><br/>
         <button class="btn-large" id="cmt_btn">Comment</button>
 
@@ -42,9 +46,6 @@
 
         for(var i =0; i<resData.Issue_Names.length;i++)
         {
-            alert("On the loop");
-           // alert(resData.Issue_Names.length);
-           // alert(resData.Issue_Names[i].text==issue_name);
             if(resData.Issue_Names[i].text==issue_name)
             {
                 var doc = resData.Issue_Names[i].content;
@@ -67,7 +68,7 @@
                     {
                         two=i;
                         /*str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+"</div>;<button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";*/
-                        str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+";</div><button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";
+                        str[count] ="<div id="+ "a1"+count+">1" + doc.slice(one,two)+";</div><button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";
                         ptr[count]=doc.slice(one,two) + ';';
                         one=two +1 ;
                         count++;
@@ -77,7 +78,7 @@
                 {
                     $('#post').append(str[i]);
                 }
-                $('#css_btn_save').append("<br><button class='btn btn-primary' id='btn_save_id'>Saved</button><button class='btn btn-primary' id='btn_edit_id'>Edit</button>");
+                $('#post').append("<br><button class='btn btn-primary' id='btn_save_id'>Saved</button><button class='btn btn-primary' id='btn_edit_id'>Edit</button>");
 
 
             }

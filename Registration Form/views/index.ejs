@@ -6,11 +6,16 @@
     <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
   </head>
-  <body>
+  <body style="background: url('/images/SignUpBackGround.jpg')" >
 <!--  <button id="login">Login</button>-->
-<h1>Bug Fixer (Write Bug Here)</h1>
-  <a href="/login">Show</a>
-  <a href="/event">Event</a>
+<div  >
+<ul  class="nav nav-pills">
+
+    <li><a class="Sign_Up_NavBar" href="/login" style="color: rgb(18, 83, 18); ">Login</a></li>
+    &nbsp;&nbsp;&nbsp;<span id="mainPagemainHeading">ISSUE TRACKER</span>
+</ul>
+
+  <!--<a href="/event">Event</a>-->
    <div  class="hero-unit" style="width: 25%" style="text-align: center">
        Sign Up <br>
        <div class="page-header">
@@ -20,10 +25,13 @@
              <input id='last_name' placeholder="Last Name " type="text"/><br>
              <input id='password' placeholder="Password " type="password"/><br>
              <input id='confirm_password' placeholder="Confirm Password " type="password"/><br>
-             <input id='email' type="text" placeholder="Email"/>
+             <input id='email' type="text" placeholder="Email"/><br>
+               <button id='sign_up' class="btn btn-primary" >Sign Up</button>
           </div>
        </div>
-       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id='sign_up' class="btn btn-primary" >Sign Up</button>
+       </div>
+    </div>
+      <!-- <span class="sign_up_text">Or Click Here To</span>&nbsp;&nbsp;<a href="/login">Login</a>-->
    </div>
      <script src="/javascripts/jquery-2.0.3.js"></script>
       <script src="/javascripts/bootstrap.js"></script>

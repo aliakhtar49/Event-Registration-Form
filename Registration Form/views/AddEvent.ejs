@@ -3,35 +3,47 @@
 <head>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
     <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/jquery-ui-1.10.4.custom.css"/>
     <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+
     <title></title>
 </head>
 
-<body>
-<div  id="forget_your_passwod_body">
+<body id="forget_your_passwod_body">
+<div  >
 <ul class="nav nav-pills">
     <li><a href="/">Home</a></li>
     <li><a href="/">SignUp</a></li>
     <li><a href="/login">Login</a></li>
 </ul>
 <div >
-    ali
+    <div>
+        <input id="autocomplete" title="type &quot;a&quot;">
+        <Button class="btn-danger" id="SerachAllContent">Search <i class="icon-search"></i></Button>
+    </div>
+
+
     <div class="span2" id="githubdiv2">
 
-        <h1>FirstName:<br><span style="color: #ffffff"><%= doc.first_name_in_database %></span></h1>
-        <h1>LastName:<br><span style="color: #ffffff"><%= doc.last_name_in_database %></span></h1>
-        <h2>Email:<br><span style="color: #ffffff"><%= doc.email_in_database %></span></h2>
+        <br><br><br> <span class="Add_Event_span">FirstName:<span style="color: #ffffff"><%= doc.first_name_in_database %></span></span><br>
+        <span class="Add_Event_span">LastName:<span style="color: #ffffff"><%= doc.last_name_in_database %></span></span><br>
+        <span class="Add_Event_span">Email:<span style="color: #ffffff"><%= doc.email_in_database %></span></span><br>
 
 
 
     </div>
-    <div class="span6" id="githubdiv"><ul class="nav nav-pills">
+
+    <div class="span6" id="githubdiv">
+        <div style="background-color: #000000">
+        <ul class="nav nav-pills">
             <!--<li><button class="btn btn-primary" id="show_all_repositry"> &lt;!&ndash;href="/Create_new_Repositry"&ndash;&gt;Show  All  Repostry </button></li>-->
+
             <li><a id="show_all_repositry" href="#">Show  All  Repostry</a></li>
             <li><a href="#">Contributions</a></li>
             <!--<li><button class="btn btn-primary" id="create_new_repositry"> &lt;!&ndash;href="/Create_new_Repositry"&ndash;&gt;Create New Repostry </button></li>-->
             <li><a id="create_new_repositry" href="#">Create New Repostry</a></li>
         </ul>
+            </div>
         <span id="view_your_repositry"></span>
     </div>
 
@@ -39,54 +51,238 @@
 </div>
 <script src="/javascripts/jquery-2.0.3.js"></script>
 <script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/jquery-ui-1.10.4.custom.js"></script>
 <script src="/javascripts/Registration.js"></script>
+<script src="/javascripts/Friends.js"></script>
 <script>
 $(document).ready(function(){
+
+
+
+
     $('#show_all_repositry').on("click",function(){
+        //var length_of_line = [];
+
+        //   alert("ss");
         $.ajax({
-            url:'/ShowAllRepositry',
+            url:'/ShowAllRepositry',    //this request fetch you the issue name frm the database
             type:'post',
+            data:{email_of_other_user:"empty"},
             success:function(res)
             {
+              /*  alert(res);
+                alert(res.Issue_Names.length);
+             alert(res.Issue_Names[0].text);   */             //data from the server
+                var email =res.email_in_Issue;
                 for(var i =0; i<res.Issue_Names.length;i++)
                 {
-                    $('#view_your_repositry').append("<ul><li ><button class='my_all_repositry'>"+ res.Issue_Names[i].text + "</button></li></ul><br/>").css({ "background-color": 'black','font': 'white', "fontSize": "60px"});
+                    $('#view_your_repositry').append("<ul><li style='list-style: none' ><a  class='my_all_repositry' href='#'>"+ res.Issue_Names[i].text + "</a></li></ul><br/>").css({ "background-color": 'black','font': 'white', "fontSize": "40px"});
+                  /*  alert(res.Issue_Names[i].text);*/
 
-                }
-                $('.my_all_repositry').on("click",function(){
-                   // var ali = $(this).attr("value");
+                }   //this loop will write all issue name in the view and will give all issue a class my_all_repositry
+                $('.my_all_repositry').on("click",function()
+                {   //when you click on any issue
+
                     var issue_name = $(this).html();
-                    alert(issue_name);
-                    $.ajax({
-                        url:'/UsersAllData',
-                        type:'post',
-                        data:{'issue_name':issue_name},
-                        success:function(data)
-                        {
+                            $('body').empty();   //empty the view
+                            $('body').append("<div id='body'></div>"); //dyammic create div
 
-                            $('body').empty();
-
-                            $('body').css({"backgroundColor":"white"});
-
-                            $('body').append("<div id='post'></div><br/>   <input id='comment' type='text' placeholder='Enter Your Comment Over Herer'/><br/> <button id='cmt_btn'>Comment</button><br/>     <div id='show_comment'></div>");
-
-                            $('body').append("<h1>"+issue_name+"</h1> <br/>");
-
-                            $('body').append("<div style='background-color: #ffffff' id='one'><br/>" + res.email_in_Issue+"</div><br/>");
-                            $('#one').append("<div id='two'<br/><br/><div></div>"+ res.name_of_person+"</div><br/>");
-
-                            for(var i =0; i<res.Issue_Names.length;i++)
+                           // $('#body').css({"backgroundColor":"white"});
+                            $('#body').append("<span id='show_all_issue_name'> Name:  "+ res.name_of_person+"</span>"); //append that issue name in the view that you click on it
+                            $('#body').append("<span class='email_in_issue_when_show_data'  id='one'><br/>Email : " + res.email_in_Issue+"</span><br/>");//get email
+                            $('#one').append("<span id='two'<div></div>Issue Name : "+issue_name +"</span><br/><br><br><br>"); //get first name of a person
+                            for(var i =0; i<res.Issue_Names.length;i++)  //this loop for getting all data to the particular issue
                             {
-
-                                if(res.Issue_Names[i].text==issue_name)
+                                if(res.Issue_Names[i].text==issue_name)   //if we find the issue
                                 {
-                                    $('#two').append("<br/><div id='show_comment1'>" + res.Issue_Names[i].content + "</div>");
+                                    var if_found  = null;
+                                    var length_of_line = [];
 
-                                    $('#two').css({ "background-color": "white", "fontSize": "30px"})
+                                    var red = "0";
+                                    var a = 147;
+                                    var str = new Array();
+                                    var ptr = new Array();
+                                    var count = 0;
+                                    var one = 0;
+                                    var two = 0;
+                                    var doc = res.Issue_Names[i].content;
+                                    /*this code is replace the inverted comma*/
+                                    for(var i =0;i<doc.length;i++)
+                                    {
+                                        if(doc.charAt(i)==';')
+                                        {
+                                            a=147;
+                                        }
+                                        if(doc.charCodeAt(i)==a)
+                                        {
+                                            doc = doc.replace(doc.charAt(i),'\"');
+                                            a++;
+                                        }
+                                    }
+                                    /*this code is replace the inverted comma*/
+
+                                    /*this code is Breaking The Line*/
+                                    for(var i=0;i<doc.length;i++)
+                                    {
+
+                                        if(doc[i]==';')
+                                        {
+                                            two=i;
+                                            /*str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+"</div>;<button class='ali' id=" + "a" +count + ">HighLite</button><br><br> ";*/
+                                            str[count] ="<div id="+ "a1"+count+">" + doc.slice(one,two)+";</div><button class='ali' id=" + "a" +count + ">HighLite</button><br> ";
+                                            ptr[count]=doc.slice(one,two) + ';';
+                                            one=two +1 ;
+                                            count++;
+                                        }
+                                    }
+                                    /*this code is  Breaking The Line*/
+
+                                  //  $('#two').append("<br/><br/><div id='show_comment1'>" + res.Issue_Names[i].content + "</div>");
+
+                                   /* $.ajax({
+                                        url:'/UsersAllData',
+                                        type:'post',
+                                        data:{'issue_name':issue_name},
+                                        success:function(data)
+                                        {*/
+                                    $.ajax({
+                                        url:'/GetpdatedHighLiteToShowTheUser',
+                                        type:'POST',
+                                        data: {issue_name:issue_name},
+                                        success:function(linestyling)
+                                        {
+                                            alert(linestyling);
+                                            if(linestyling == "default")
+                                            {
+
+                                            }
+                                            else
+                                            {
+                                                /*alert("hh");
+                                                 alert(linestyling.length);
+                                                 alert(linestyling.charAt(1));*/
+
+                                                /*var length_of_line = [];*/
+                                                for(var i=1;i< linestyling.length;i++)
+                                                {
+                                                    length_of_line[i-1]=linestyling.charAt(i);
+                                                }
+
+                                            }
+
+                                        }
+                                    }).done(function(linestyling){
+                                                for(var i=0;i<str.length;i++ )
+                                                {
+
+                                                    for(var  j =0;j<length_of_line.length;j++)
+                                                    {
+
+                                                        if(length_of_line[j] == i )
+                                                        {
+
+                                                            alert("here");
+
+                                                            if_found = "find";
+                                                        }
+
+                                                    }
+
+                                                    if(if_found == "find")
+                                                    {
+                                                        $('#two').append("<div id='css_btn_save'>"+str[i]+"</div>");
+                                                        $('#a1'+ i+'').addClass('redline');
+                                                        $('#a1' + i+'').css({ fontSize:"20px"  });
+                                                        if_found=null;
+                                                        // if_found=null;
+                                                    }
+                                                    else
+                                                    {
+
+                                                        $('#two').append("<div id='css_btn_save'>"+str[i]+"</div>");
+                                                        $('#css_btn_save').css("font-size:20px;");
+                                                        $('#a1' + i+'').css({  fontSize:"20px" });
+                                                    }
+
+                                                }
+
+                                            })
+
+
+
+                                    $('#css_btn_save').append("<br><button class='btn btn-primary' id='btn_save_id'>Saved</button><button class='btn btn-primary' id='btn_edit_id'>Edit</button>");
+                                    $('.ali').on("click",function(){
+
+                                        var a = $(this).attr("id");      //get the id of current click button that i generated dynamically
+                                        //  alert(a);                        //alert it
+                                        var b = a.charAt(1);             //get the value of count its positiona is at 1
+                                        //  alert(ptr[b]);
+                                        var id_string = "a1"+ a.charAt(1);
+                                        // alert(id_string);
+                                        if($('#a1'+ a.charAt(1)+'').hasClass('redline'))
+                                        {
+                                            $('#a1'+ a.charAt(1)+'').removeClass('redline');
+                                            red = red.substr(0, red.length-1);
+                                            alert(red);
+                                        }
+                                        else
+                                        {
+                                            $('#a1'+ a.charAt(1)+'').addClass('redline');
+                                            red = red + b;
+                                            alert(red);
+
+                                        }
+
+                                    });
+                                    $('#btn_save_id').on("click",function(){
+                                        $('.ali').attr("disabled", true);
+                                        $.ajax({
+                                            url:'/SaveHiglitevalueHere',
+                                            type:'POST',
+                                            data:{red:red,issue_name:issue_name},
+                                            success:function(res){alert(res);}
+                                        })
+                                        alert(red);
+                                    });
+
+                                    $('#btn_edit_id').on("click",function(){
+                                        $('.ali').attr("disabled", false);
+                                    });   //ths code cotain save , edit btn to apply inline css
+
 
                                 }
-
                             }
+
+                            $('#two').append("<div id='post'></div><br/>   <input id='comment' type='text' placeholder='Enter Your Comment Over Herer'/><br/> <button id='cmt_btn'>Comment</button><br/>     <div id='show_comment'></div>");
+
+                            $('#cmt_btn').on("click",function(){
+                                var comment_value = $('#comment').val();
+                                alert(comment_value);
+                                $.ajax({
+                                    url:'/comment1',
+                                    type:'post',
+                                    data:{email_post:email,issue_name:issue_name,comment_value:comment_value},
+                                    success: function(Data){
+                                        alert(Data);
+                                        for(var i =Data.Comment.length-1; i<Data.Comment.length;i++)
+                                        {
+                                            // $('#show_comment').append( "<post id='cmt_post1'><br/>" + Data.Comment[i].text +  "<br/><Button style='margin-left: 113px;' class='btn btn-primary'>Delete</Button></post><br/> ");
+                                            //  $('#show_comment').css({ "background-color": 'black','font': 'white', "fontSize": "30px"});
+                                            $('#show_comment').append( "<br/><post1 id='cmt_post1'><br/><br>" + Data.Comment[i].text +  "<Button>Delete</Button></post1>" );
+                                            alert(Data.Comment[i].text);
+                                        }
+
+
+                                    }
+                                }).done(function(){
+
+                                            alert("done");
+
+
+
+                                        });
+                            });
+
                             $.ajax({
                                 url:'/AlreadyHaveComments',
                                 type:'post',
@@ -94,9 +290,9 @@ $(document).ready(function(){
                                 success:function(res){
                                     for(var i =0; i<res.Comment.length;i++)
                                     {
-                                        $('#show_comment1').append( "<br/><post1 id='cmt_post1'><br/><br>" + res.Comment[i].text +  "<Button>Delete</Button></post1>" );
+                                        $('#show_comment').append( "<br/><post1 id='cmt_post1'><br/><br>" + res.Comment[i].text +  "<Button>Delete</Button></post1>" );
                                     }
-                                    $('#cmt_btn').on("click",function(){
+                                   /* $('#cmt_btn').on("click",function(){
                                         var comment_value = $('#comment').val();
                                         $.ajax({
                                             url:'/onlysavethecoomment',
@@ -120,19 +316,19 @@ $(document).ready(function(){
                                             }
                                         })
 
-                                    });
+                                    });*/
 
 
                                 }
                             })
 
 
-                        }
-                    })
-                })
+                       // }
+                    //})
+                });
             }
         })
-    })
+    });
     $('#create_new_repositry').on("click",function(){
         var first_name = <%- JSON.stringify(doc.first_name_in_database) %>;
         var email  = <%- JSON.stringify(doc.email_in_database) %>

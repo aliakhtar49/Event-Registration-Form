@@ -50,9 +50,14 @@ console.log("herer");
     res.render('login.ejs');
 };
 exports.index= function(req,res){
-    res.render('index');
+   /* res.render('index');*/
+    res.render('Main');
 }
 exports.LoginPage = function(req, res){
 
 
 };
+exports.index_page = function(req,res)
+{
+    res.render('index');
+}

@@ -12,14 +12,14 @@ background-color: #413838;
 }
 #forget_your_passwod_div
 {
-    border: 1px solid #D8B8B8;
+    border: 1px solid #225C17;
     padding: 72px;
     margin-bottom: 30px;
     font-size: 27px;
     font-weight: 200;
     line-height: 56px;
     height:123px;
-    background-color: #F5EDED;
+    background-color: #000000;
 
 }
 #login_page_body
@@ -105,22 +105,23 @@ background-color: #413838;
 }
 #commentbox
 {
-    border: 2px solid green;
+   /* border: 2px solid green;*/
     height: 984px;
     margin-right: 93px;
     margin-left: 99px;
     margin-top: 45px;
     color: #ffffff;
+    background-color: rgb(0, 0, 0);
 }
 #innercomment1
-{border: 2px solid green;
+{/*border: 2px solid green;*/
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
     height: 380px;
 }
 #innercomment2
-{border: 2px solid green;
+{/*border: 2px solid green;*/
     margin-top: 188px;
     margin-left: 15px;
     margin-right: 15px;
@@ -128,11 +129,11 @@ background-color: #413838;
 #comment{
     width: 500px;
     height: 30px;
-    margin-left: 112px;
+    margin-left: 309px;
 }
 #cmt_btn
 {
-    margin-left: 112px;
+    margin-left: 309px;
     color: rgb(221, 221, 233);
     background-color: rgb(71, 71, 73);
     height: 38px;
@@ -156,7 +157,7 @@ margin-left: 112px;
     font-size: 25px;
 
 
-    border-bottom: 1px solid green;
+  /*  border-bottom: 1px solid green;*/
     padding: 5px;
 }
 .redline
@@ -165,5 +166,114 @@ margin-left: 112px;
 }
 #post
 {
-    border:2px solid green;
+    border: 1px solid rgb(33, 48, 33);
+    /*border:2px solid green;*/
+}
+#show_all_issue_name
+{
+    color: rgb(58, 167, 43);
+    font-family: cursive;
+}
+.email_in_issue_when_show_data
+{
+    color: rgb(58, 167, 43);
+}
+#body
+{
+    color: rgb(58, 167, 43);
+    background-color: black;
+    color: #ffffff;
+    -webkit-box-shadow: 39px 17px 32px 12px rgba(0,0,0,0.72);
+    -moz-box-shadow: 39px 17px 32px 12px rgba(0,0,0,0.72);
+    box-shadow: 39px 17px 32px 12px rgba(0,0,0,0.72);
+}
+#show_comment1
+{
+    margin-left: 314px;
+    font-family: cursive;
+    font-size: 45px;
+
+    color: wheat;
+}
+#two
+{
+    margin-left: 314px;
+    font-family: cursive;
+    font-size: 45px;
+    color: rgb(58, 167, 43);
+}
+
+
+
+#first_page_body
+{
+    background-color: #000000;
+}
+.sign_up_text
+{
+    font-size: 18px;
+}
+#main_heading
+{
+
+}
+#nav
+{
+    background-color: #000000;
+}
+#mainPagemainHeading{
+    font-size: 60px;
+    color: rgb(18, 83, 18);
+    margin-left: 233px;
+
+
+}
+#Sign_Up_NavBar
+{
+    background-color: #166E21;
+}
+#NewRepostry{
+    background-color: black;
+}
+
+#login_page_of_div
+{
+    width: 100%;
+    height: 100%;
+}
+#file
+{
+    margin-left: 40px;
+}
+.post_user_info
+{
+    color:green;
+}
+.Add_Event_span
+{
+    font-size: 20px;
+}
+#Issue_Heading
+{
+    color: black;
+}
+.ali
+{
+    width: 64px;
+    height: 33px;
+}
+#User_Contact_Over_Here
+{
+  border: 1px solid green;
+    color: #ffffff;
+}
+#User_Post_Over_Here
+{
+    border: 1px solid green;
+    color: #ffffff;
+}
+#User_Comment_Over_Here
+{
+    border: 1px solid green;
+    color: #ffffff;
 }

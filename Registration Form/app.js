@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
 }
 //app.post('/file-upload',routes.fileUpload);
 app.get('/', routes.index);
+app.get('/index_page',routes.index_page);
 //app.get('/users', user.list);
 app.get('/login',routes.login);
 //app.get('/LoginPage', routes.LoginPage);
@@ -69,7 +70,10 @@ app.post('/FirstfindPassword',dataBase.FirstfindPassword);
         console.log('res: '+res);
     });
 });*/
-
+app.post('/ShowAllAvailableUser',dataBase.ShowAllAvailableUser);
+app.post('/GetpdatedHighLiteToShowTheUser',dataBase.GetpdatedHighLiteToShowTheUser);
+app.post('/GetCurrentUserEmail',dataBase.GetCurrentUserEmail);
+app.post('/BackToYourProfile',dataBase.BackToYourProfile);
 
 
 
