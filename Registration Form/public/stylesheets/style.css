@@ -5,7 +5,7 @@ body {
 
 #websiteDescription{
 
-opacity:1.0;
+opacity:0.85;
 width: 50%;
 margin: auto;
 margin-top: 50px;
@@ -43,8 +43,8 @@ background-color: #413838;
 
 }
 #login_page_div1
-{
-    border: 1px solid #D8B8B8;
+{   opacity: 0.90;
+    border: 1px solid #000000;
     padding: 72px;
     margin-bottom: 63px;
     font-size: 31px;
@@ -52,18 +52,19 @@ background-color: #413838;
     line-height: 38px;
     height:137px;
     margin-left: 108px;
-    background-color: #F5EDED;
+    background-color: #0C2707
 }
 #login_page_div2
-{
-    border: 1px solid #D8B8B8;
+{  
+    opacity: 0.90;
+    border: 1px solid #000000;
     padding: 72px;
     margin-bottom: 63px;
     font-size: 31px;
     font-weight: 200;
     line-height: 38px;
     height:137px;
-    background-color: #F5EDED;
+    background-color: #0C2707
 }
 #event_div
 {
@@ -238,7 +239,7 @@ margin-left: 112px;
     background-color: #000000;
 }
     #mainPagemainHeading{
-        opacity:0.5;
+        opacity:0.95;
     font-size: 80px;
     color: rgb(18, 83, 18);
     margin-left:40px;
