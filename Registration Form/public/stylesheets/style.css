@@ -8,7 +8,7 @@ body {
 opacity:0.85;
 width: 50%;
 margin: auto;
-margin-top: 50px;
+margin-top: 60px;
 text-align: center;
 font-size: 40px;
 letter-spacing: 6px;
@@ -239,7 +239,7 @@ margin-left: 112px;
     background-color: #000000;
 }
     #mainPagemainHeading{
-        opacity:0.95;
+    opacity:0.95;
     font-size: 80px;
     color: rgb(18, 83, 18);
     margin-left:40px;
