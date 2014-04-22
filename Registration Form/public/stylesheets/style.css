@@ -129,17 +129,20 @@ background-color: #413838;
 #comment{
     width: 500px;
     height: 30px;
-    margin-left: 309px;
+    margin-left: -154px;
+    margin-top: -307px;
 }
 #cmt_btn
 {
-    margin-left: 309px;
+   /* margin-left: -154px;*/
     color: rgb(221, 221, 233);
     background-color: rgb(71, 71, 73);
     height: 38px;
     padding-top: 5px;
     width: 300px;
     clear: both;
+    margin-top: -200px;
+    margin-left: 62px;
 }
 #post{
 margin-left: 112px;
@@ -259,21 +262,90 @@ margin-left: 112px;
 }
 .ali
 {
-    width: 64px;
-    height: 33px;
+
 }
 #User_Contact_Over_Here
 {
-  border: 1px solid green;
+
     color: #ffffff;
 }
 #User_Post_Over_Here
 {
     border: 1px solid green;
     color: #ffffff;
+    height: 200px;
+    width: 50%;
 }
 #User_Comment_Over_Here
 {
     border: 1px solid green;
     color: #ffffff;
+}
+#here_is_user_post
+{
+
+    margin-left: 104px;
+    text-align: center;
+    width: 50%;
+    margin-top: 58px;
+    border-bottom: 1px solid green;
+    padding-bottom: 70px;
+}
+#issue_name_of_user
+{
+
+    margin-left: -493px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(61, 77, 61);
+}
+#name_and_email_of_user
+{
+    border-right: 1px solid green;
+    height: 500px;
+    padding-right: 30px;
+    border-bottom: 1px solid green;
+    margin-top: 70px;
+}
+#user_comment_over_there
+{
+
+    color: #ffffff;
+    width: 25%;
+    margin-left: 50%;
+
+    margin-top: 297px;
+}
+.border_in_comment
+{
+    color: white;
+    border-bottom: 1px solid rgb(3, 39, 3);
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #141212;
+    text-align: center;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    margin-right: 218px;
+
+}
+#comment_here_in_this_line
+{
+    border-bottom: 1px solid green;
+    padding-bottom: 45px;
+    color: #000000;
+    padding-top: 25px;
+    margin-left: 269px;
+    padding-bottom: 25px;
+    line-height: 56px;
+    padding-left: 204px;
+}
+#main_div_when_show_user_profile
+{
+    background-color: #131111;
+    width: 100%;
+    height: 707px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgb(15, 36, 15);
 }
