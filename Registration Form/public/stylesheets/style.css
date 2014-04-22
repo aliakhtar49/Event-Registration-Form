@@ -3,6 +3,22 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#websiteDescription{
+
+opacity:1.0;
+width: 50%;
+margin: auto;
+margin-top: 50px;
+text-align: center;
+font-size: 40px;
+letter-spacing: 6px;
+color: white;
+line-height: 45px; 
+}
+#websitePunchline{
+color: red;
+}
+
 a {
   color: #00B7FF;
 }
@@ -221,11 +237,12 @@ margin-left: 112px;
 {
     background-color: #000000;
 }
-#mainPagemainHeading{
-    font-size: 60px;
+    #mainPagemainHeading{
+        opacity:0.5;
+    font-size: 80px;
     color: rgb(18, 83, 18);
-    margin-left: 233px;
-
+    margin-left:40px;
+    text-align: right;
 
 }
 #Sign_Up_NavBar
