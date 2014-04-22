@@ -243,6 +243,7 @@ margin-left: 112px;
 }
     #mainPagemainHeading{
     opacity:0.95;
+    text-shadow: 1px 1px #ffffff;
     font-size: 80px;
     color: rgb(18, 83, 18);
     margin-left:40px;
