@@ -25,7 +25,12 @@ width: 75%;
 margin: auto;    
 }
 #member1,#member2,#member3,#member4{
+    text-align: left;
+    width: 512px;
+    opacity: 0.90;
     display: inline-block;
+    background-color: green;
+    color: white;
 }
 #memberInformation{
     color: red;
