@@ -22,12 +22,14 @@ color: red;
 }
 #contactContainer{
 width: 75%;
+text-align: center;
 margin: auto;    
+display: inline-block;
 }
 #member1,#member2,#member3,#member4{
     text-align: left;
-    width: 512px;
-    opacity: 0.90;
+    width: 256px;
+    opacity: 0.95;
     display: inline-block;
     background-color: green;
     color: white;
