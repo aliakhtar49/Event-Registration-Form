@@ -30,6 +30,8 @@ if ('development' == app.get('env')) {
 }
 //app.post('/file-upload',routes.fileUpload);
 app.get('/', routes.index);
+app.get('/aboutPage',routes.about);
+app.get('/contactPage',routes.contact);
 app.get('/index_page',routes.index_page);
 //app.get('/users', user.list);
 app.get('/login',routes.login);
