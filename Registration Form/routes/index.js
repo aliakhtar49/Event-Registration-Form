@@ -52,12 +52,14 @@ console.log("herer");
 exports.index= function(req,res){
    /* res.render('index');*/
     res.render('Main');
-}
-exports.LoginPage = function(req, res){
-
-
+};
+exports.contact = function(req, res){
+res.render('contactPage.ejs');
+};
+exports.about = function(req, res){
+res.render('aboutPage.ejs');
 };
 exports.index_page = function(req,res)
 {
     res.render('index');
-}
+};
